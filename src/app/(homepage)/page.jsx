@@ -6,7 +6,7 @@ import styles from './page.module.scss'
 
 export default function () {
   return (
-    <AOS once={1}>
+    <AOS once={false}>
       <div className={styles.modules}>
         <Title />
         <Article />

@@ -10,7 +10,7 @@ export default function ImgN2() {
         <Animation
           duration={1000}
           animation={'zoom-out-right'}
-          anchorPlacement={'top-center'}
+          anchorPlacement={'center-center'}
           anchor={`.${styles['img-N2-photo']}`}
         >
           <Image
@@ -28,7 +28,7 @@ export default function ImgN2() {
         <Animation
           delay={500}
           animation={'zoom-out'}
-          anchorPlacement={'top-center'}
+          anchorPlacement={'center-center'}
           anchor={`.${styles['img-N2-photo']}`}
         >
           <Image
