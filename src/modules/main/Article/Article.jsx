@@ -1,6 +1,7 @@
-import Image from '@/ui/Image'
-import Animation from '@/containers/Animation'
+import ImgN1 from './ImgN1'
+import ImgN2 from './ImgN2'
 import { Text } from './components'
+
 import styles from './styles/Article.module.scss'
 
 export default function Article() {
@@ -37,67 +38,4 @@ export default function Article() {
     </div>
   )
 }
-
-export function ImgN1() {
-  return (
-    <div className={styles['img-N1']}>
-      <div className={styles['img-N1-photo']}>
-        <Animation duration={1000} animation={'zoom-out-right'}>
-          <Image
-            alt={'title-photo'}
-            src={'/img/photo (1).png'}
-            fill
-            priority
-            style={{ objectFit: 'contain' }}
-            sizes="100%"
-          />
-        </Animation>
-      </div>
-
-      <div className={styles['img-N1-doc']}>
-        <Animation delay={500} animation={'zoom-out'}>
-          <Image
-            alt={'title-stamp'}
-            src={'/img/photo (2).png'}
-            fill
-            priority
-            style={{ objectFit: 'contain' }}
-            sizes="100%"
-          />
-        </Animation>
-      </div>
-    </div>
-  )
-}
-
-export function ImgN2() {
-  return (
-    <div className={styles['img-N2']}>
-      <div className={styles['img-N2-photo']}>
-        <Animation duration={1000} animation={'zoom-out-right'}>
-          <Image
-            alt={'title-photo'}
-            src={'/img/photo (3).png'}
-            fill
-            priority
-            style={{ objectFit: 'contain' }}
-            sizes="100%"
-          />
-        </Animation>
-      </div>
-
-      <div className={styles['img-N2-doc']}>
-        <Animation delay={500} animation={'zoom-out'}>
-          <Image
-            alt={'title-stamp'}
-            src={'/img/photo (4).png'}
-            fill
-            priority
-            style={{ objectFit: 'contain' }}
-            sizes="100%"
-          />
-        </Animation>
-      </div>
-    </div>
-  )
-}
+export { Article }
