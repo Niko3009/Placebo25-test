@@ -29,7 +29,7 @@ export default function ImgN2() {
           delay={500}
           animation={'zoom-out'}
           anchorPlacement={'top-center'}
-          anchor={`.${styles['img-N1']}`}
+          anchor={`.${styles['img-N2']}`}
         >
           <Image
             alt={'title-stamp'}
