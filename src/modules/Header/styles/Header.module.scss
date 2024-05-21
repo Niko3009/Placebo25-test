@@ -1,0 +1,76 @@
+@import '@/assets/all.scss';
+@import '@/app/layout.module.scss';
+
+$small-form-limit-px: 280;
+$small-form-limit: calc($small-form-limit-px * (-1px));
+
+$logo-animation: fade-in-backward 2s ease 0s 1 normal forwards;
+
+:export {
+    small-form-limit-px: $small-form-limit-px;
+}
+
+.module {
+    z-index: 1000;
+    position: sticky;
+    position: -webkit-sticky;
+    top: $small-form-limit;
+    width: 100%;
+    padding: 0 40px;
+    background: transparent;
+    overflow: hidden;
+}
+
+.wrapper {
+    width: 100%;
+    padding: 40px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 240px;
+}
+
+.head-description {
+    width: 100%;
+    text-align: center;
+    color: #C22727;
+
+    p,
+    a {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 14px;
+    }
+
+    a {
+        color: #290B0B;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+.logo-line {
+    width: 100%;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    @include transition(500ms);
+    animation: $logo-animation;
+
+    .logo {
+        width: 100%;
+        height: 100%;
+
+        &-small-form {
+            opacity: 0;
+        }
+    }
+}
+
+
+
+@import './Header-tablet.module.scss';

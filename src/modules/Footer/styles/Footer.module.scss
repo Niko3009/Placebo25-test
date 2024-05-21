@@ -1,0 +1,79 @@
+@import '@/assets/all.scss';
+@import '@/app/layout.module.scss';
+
+.module {
+    z-index: 500;
+    width: 100%;
+    padding: 0 40px;
+    background: transparent;
+}
+
+.wrapper {
+    width: 100%;
+    padding: 40px 0;
+    padding-bottom: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 100px;
+}
+
+.logo-line {
+    width: 100%;
+    height: 80px;
+
+    .logo {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.text-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+
+    .text {
+        width: 100%;
+        padding: 0 20px;
+        color: #B04A4A;
+        text-align: center;
+
+        p {
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 26px;
+        }
+    }
+
+    .links {
+        width: 100%;
+        height: auto;
+
+        padding: 0 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        color: #C22727;
+
+        p {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 20px;
+            text-align: center;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+
+
+@import './Footer-tablet.module.scss';
+@import './Footer-desktop.module.scss';

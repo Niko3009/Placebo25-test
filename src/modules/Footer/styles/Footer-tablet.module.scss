@@ -1,0 +1,26 @@
+@media #{$tablet} {
+    .logo-line {
+        height: 80px;
+    }
+
+    .text-box {
+        gap: 40px;
+
+        .text {
+            p {
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 26px;
+            }
+        }
+
+        .links {
+            p {
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 20px;
+                text-align: center;
+            }
+        }
+    }
+}

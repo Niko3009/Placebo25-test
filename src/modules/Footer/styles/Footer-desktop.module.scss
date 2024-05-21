@@ -1,0 +1,32 @@
+@media #{$desktop} {
+    .logo-line {
+        height: 140px;
+    }
+
+    .text-box {
+        gap: 40px;
+
+        .text {
+            width: 420px;
+            padding: 0;
+
+            p {
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 26px;
+            }
+        }
+
+        .links {
+            width: 240px;
+            padding: 0;
+
+            p {
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 20px;
+                text-align: center;
+            }
+        }
+    }
+}

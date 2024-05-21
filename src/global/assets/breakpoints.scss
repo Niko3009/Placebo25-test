@@ -1,0 +1,36 @@
+$screen: "only screen";
+
+$min-width-device: 320px;
+$max-width-device: 5920px;
+
+// 
+
+$mobile-start: $min-width-device;
+$mobile-end: 768px;
+
+$tablet-start: $mobile-end;
+$tablet-end: 1440px;
+
+$desktop-start: $tablet-end;
+$desktop-end: $max-width-device;
+
+// 
+
+$mobile: "#{$screen} and ( min-width: #{$mobile-start})";
+$mobile-only: "#{$mobile} and (max-width: #{$mobile-end})";
+
+$tablet: "#{$screen} and (min-width: #{$tablet-start})";
+$non-tablet: "#{$screen} and (max-width: #{$tablet-start})";
+$tablet-only: "#{$tablet} and (max-width: #{$tablet-end})";
+
+$desktop: "#{$screen} and (min-width: #{$desktop-start})";
+$non-desktop: "#{$screen} and (max-width: #{$desktop-start})";
+$desktop-only: "#{$desktop} and (max-width: #{$desktop-end})";
+
+// 
+
+:export {
+    mobile: $mobile;
+    tablet: $tablet;
+    desktop: $desktop;
+}

@@ -1,0 +1,50 @@
+@media #{$tablet} {
+    .wrapper {
+        gap: 240px;
+    }
+
+    .title-img {
+        .photo {
+            width: 60%;
+        }
+
+        .stamp {
+            height: 120px;
+            width: auto;
+            position: absolute;
+            bottom: -5%;
+            right: 66%;
+        }
+
+        .description {
+            position: absolute;
+            height: auto;
+            width: auto;
+            bottom: -6%;
+            right: 22%;
+            transform: rotate(-14deg);
+
+            p {
+                font-weight: 600;
+                font-size: 21px;
+                line-height: 26px;
+            }
+        }
+    }
+
+    .title-text {
+        .text {
+            width: 80%;
+
+            h1 {
+                font-weight: 400;
+                font-size: 80px;
+                line-height: 120px;
+            }
+        }
+
+        .sign {
+            width: 60%;
+        }
+    }
+}

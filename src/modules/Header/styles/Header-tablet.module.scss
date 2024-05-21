@@ -1,0 +1,26 @@
+@media #{$tablet} {
+    .logo-line {
+        height: 192px;
+
+        .logo {
+            &-small-form {
+                opacity: 1;
+                height: 80px;
+                width: 80px;
+            }
+        }
+    }
+}
+
+
+
+@media #{$desktop} {
+    .logo-line {
+        .logo {
+            &-small-form {
+                height: 100%;
+                width: 120px;
+            }
+        }
+    }
+}

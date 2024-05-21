@@ -1,0 +1,86 @@
+@import '@/assets/all.scss';
+@import '@/app/layout.module.scss';
+
+.wrapper {
+    height: auto;
+    width: 100%;
+    margin-bottom: 280px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 120px;
+}
+
+.text {
+    width: 100%;
+    padding: 0 20px;
+    text-align: center;
+    color: #000000;
+
+    &-sub-box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 24px;
+    }
+
+    p {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 16px;
+    }
+}
+
+.img-N1 {
+    width: 100%;
+    height: max-content;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &-photo {
+        margin-right: 30px;
+        height: auto;
+        width: 60%;
+        transform: rotate(-8deg);
+    }
+
+    &-doc {
+        position: absolute;
+        height: auto;
+        width: 20%;
+        right: 20%;
+        top: 160px;
+        transform: rotate(21deg);
+    }
+}
+
+.img-N2 {
+    width: 100%;
+    height: max-content;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    &-photo {
+        width: 80%;
+        height: auto;
+    }
+
+    &-doc {
+        position: absolute;
+        width: 20%;
+        height: auto;
+        top: 50%;
+        left: 70%;
+        transform: rotate(-8deg);
+    }
+}
+
+@import './Article-tablet.module.scss';
+@import './Article-desktop.module.scss';

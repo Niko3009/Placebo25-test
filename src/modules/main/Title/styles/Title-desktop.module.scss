@@ -1,0 +1,71 @@
+@media #{$desktop} {
+    .wrapper {
+        height: auto;
+        width: 100%;
+        margin-top: 220px;
+        margin-bottom: 150px;
+        gap: 320px;
+    }
+
+    .title-img {
+        height: auto;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+
+        .photo {
+            height: 560px;
+            width: auto;
+        }
+
+        .stamp {
+            height: 120px;
+            width: auto;
+            position: absolute;
+            bottom: -14%;
+            right: 61%;
+        }
+
+        .description {
+            position: absolute;
+            height: auto;
+            width: auto;
+            bottom: -2%;
+            right: 25%;
+
+            p {
+                font-weight: 600;
+                font-size: 21px;
+                line-height: 26px;
+            }
+        }
+    }
+
+    .title-text {
+        position: relative;
+        height: fit-content;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .text {
+            width: 890px;
+            text-align: center;
+
+            h1 {
+                font-weight: 400;
+                font-size: 100px;
+                line-height: 130px;
+            }
+        }
+
+        .sign {
+            height: 986px;
+            width: auto;
+            position: absolute;
+            top: 14%;
+            right: 11%;
+        }
+    }
+}
