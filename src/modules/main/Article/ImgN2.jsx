@@ -11,7 +11,7 @@ export default function ImgN2() {
           duration={1000}
           animation={'zoom-out-right'}
           anchorPlacement={'top-center'}
-          anchor={`.${styles['img-N2']}`}
+          anchor={`.${styles['img-N2-photo']}`}
         >
           <Image
             alt={'title-photo'}
@@ -29,7 +29,7 @@ export default function ImgN2() {
           delay={500}
           animation={'zoom-out'}
           anchorPlacement={'top-center'}
-          anchor={`.${styles['img-N2']}`}
+          anchor={`.${styles['img-N2-photo']}`}
         >
           <Image
             alt={'title-stamp'}
